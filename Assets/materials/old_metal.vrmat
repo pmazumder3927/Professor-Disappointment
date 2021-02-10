@@ -1,0 +1,1164 @@
+<vrmat>
+	<Asset renderer="vray" url="/old_metal/VRayBRDF/fog_color_tex" type="texture" layout="">
+		<plugin>
+			<vrayplugin version="7" type="texture" name="TexAColorOp">
+				<parameters>
+					<parameter handler="default" listType="none" type="texture" name="color_a" label="color_a">
+						<value>
+							<r>1</r>
+							<g>1</g>
+							<b>1</b>
+						</value>
+					</parameter>
+					<parameter handler="default" listType="none" type="float texture" name="mult_a" label="mult_a">
+						<value>1.0</value>
+					</parameter>
+				</parameters>
+			</vrayplugin>
+		</plugin>
+	</Asset>
+	<Asset renderer="vray" url="/old_metal/VRayBRDF/environment_override" type="texture" layout="">
+		<plugin>
+			<vrayplugin version="7" type="texture" name="TexAColorOp">
+				<parameters>
+					<parameter handler="default" listType="none" type="texture" name="color_a" label="color_a">
+						<value>
+							<r>0</r>
+							<g>0</g>
+							<b>0</b>
+						</value>
+					</parameter>
+					<parameter handler="default" listType="none" type="float texture" name="mult_a" label="mult_a">
+						<value>1.0</value>
+					</parameter>
+				</parameters>
+			</vrayplugin>
+		</plugin>
+	</Asset>
+	<Asset renderer="vray" url="/old_metal/VRayBRDF/hilight_glossiness" type="texture" layout="">
+		<plugin>
+			<vrayplugin version="7" type="texture" name="TexAColorOp">
+				<parameters>
+					<parameter handler="default" listType="none" type="texture" name="color_a" label="color_a">
+						<value>
+							<r>1</r>
+							<g>1</g>
+							<b>1</b>
+						</value>
+					</parameter>
+					<parameter handler="default" listType="none" type="float texture" name="mult_a" label="mult_a">
+						<value>1.0</value>
+					</parameter>
+				</parameters>
+			</vrayplugin>
+		</plugin>
+	</Asset>
+	<Asset renderer="vray" url="/old_metal/VRayBRDF/diffuse" type="texture" layout="">
+		<plugin>
+			<vrayplugin version="7" type="texture" name="TexAColorOp">
+				<parameters>
+					<parameter handler="default" listType="none" type="texture" name="color_a" label="color_a">
+						<value>
+							<r>0.0431373</r>
+							<g>0.0431373</g>
+							<b>0.0431373</b>
+						</value>
+					</parameter>
+					<parameter handler="default" listType="none" type="float texture" name="mult_a" label="mult_a">
+						<value>1.0</value>
+					</parameter>
+				</parameters>
+			</vrayplugin>
+		</plugin>
+	</Asset>
+	<Asset renderer="vray" url="/old_metal/VRayBRDF/fresnel_ior" type="texture" layout="">
+		<plugin>
+			<vrayplugin version="7" type="texture" name="TexAColorOp">
+				<parameters>
+					<parameter handler="default" listType="none" type="texture" name="color_a" label="color_a">
+						<value>
+							<r>10</r>
+							<g>10</g>
+							<b>10</b>
+						</value>
+					</parameter>
+					<parameter handler="default" listType="none" type="float texture" name="mult_a" label="mult_a">
+						<value>1.0</value>
+					</parameter>
+				</parameters>
+			</vrayplugin>
+		</plugin>
+	</Asset>
+	<Asset renderer="vray" url="/old_metal/VRayBRDF/anisotropy" type="texture" layout="">
+		<plugin>
+			<vrayplugin version="7" type="texture" name="TexAColorOp">
+				<parameters>
+					<parameter handler="default" listType="none" type="texture" name="color_a" label="color_a">
+						<value>
+							<r>0</r>
+							<g>0</g>
+							<b>0</b>
+						</value>
+					</parameter>
+					<parameter handler="default" listType="none" type="float texture" name="mult_a" label="mult_a">
+						<value>1.0</value>
+					</parameter>
+				</parameters>
+			</vrayplugin>
+		</plugin>
+	</Asset>
+	<Asset renderer="vray" url="/old_metal/VRayBRDF/TexBitmap/nouvw_color" type="texture" layout="">
+		<plugin>
+			<vrayplugin version="7" type="texture" name="TexCombineColor">
+				<parameters>
+					<parameter handler="default" listType="none" type="color" name="color" label="color">
+						<value>
+							<r>0</r>
+							<g>0</g>
+							<b>0</b>
+						</value>
+					</parameter>
+					<parameter handler="default" listType="none" type="texture" name="texture" label="texture">
+						<value/>
+					</parameter>
+					<parameter handler="default" listType="none" type="float" name="texture_multiplier" label="texture_multiplier">
+						<value>1.0</value>
+					</parameter>
+				</parameters>
+			</vrayplugin>
+		</plugin>
+	</Asset>
+	<Asset renderer="vray" url="/old_metal/VRayBRDF/TexBitmap/UVWGenChannel" type="uvw" layout="">
+		<plugin>
+			<vrayplugin version="7" type="uvw" name="UVWGenChannel">
+				<parameters>
+					<parameter handler="default" listType="none" type="vector" name="coverage" label="coverage">
+						<value>
+							<x>1</x>
+							<y>1</y>
+							<z>1</z>
+						</value>
+					</parameter>
+					<parameter handler="default" listType="none" type="integer" name="crop_u" label="crop_u">
+						<value>0</value>
+					</parameter>
+					<parameter handler="default" listType="none" type="integer" name="crop_v" label="crop_v">
+						<value>0</value>
+					</parameter>
+					<parameter handler="default" listType="none" type="integer" name="crop_w" label="crop_w">
+						<value>0</value>
+					</parameter>
+					<parameter handler="default" listType="none" type="float" name="duvw_scale" label="duvw_scale">
+						<value>1</value>
+					</parameter>
+					<parameter handler="default" listType="none" type="integer" name="nsamples" label="nsamples">
+						<value>0</value>
+					</parameter>
+					<parameter handler="default" listType="none" type="transform" name="tex_transform" label="tex_transform">
+						<value>
+							<vector>
+								<x>1</x>
+								<y>0</y>
+								<z>0</z>
+							</vector>
+							<vector>
+								<x>0</x>
+								<y>1</y>
+								<z>0</z>
+							</vector>
+							<vector>
+								<x>0</x>
+								<y>0</y>
+								<z>1</z>
+							</vector>
+							<vector>
+								<x>0</x>
+								<y>0</y>
+								<z>0</z>
+							</vector>
+						</value>
+					</parameter>
+					<parameter handler="default" listType="none" type="bool" name="use_double_sided_mode" label="use_double_sided_mode">
+						<value>0</value>
+					</parameter>
+					<parameter handler="default" listType="none" type="integer" name="uvw_channel" label="uvw_channel">
+						<value>1</value>
+					</parameter>
+					<parameter handler="default" listType="none" type="output vector texture" name="uvw_coords" label="uvw_coords">
+						<value/>
+					</parameter>
+					<parameter handler="default" listType="none" type="transform texture" name="uvw_transform_tex" label="uvw_transform_tex">
+						<value/>
+					</parameter>
+					<parameter handler="default" listType="none" type="plugin" name="uvwgen" label="uvwgen">
+						<value/>
+					</parameter>
+					<parameter handler="default" listType="none" type="integer" name="wrap_mode" label="wrap_mode">
+						<value>0</value>
+					</parameter>
+					<parameter handler="default" listType="none" type="integer" name="wrap_u" label="wrap_u">
+						<value>0</value>
+					</parameter>
+					<parameter handler="default" listType="none" type="integer" name="wrap_v" label="wrap_v">
+						<value>0</value>
+					</parameter>
+					<parameter handler="default" listType="none" type="integer" name="wrap_w" label="wrap_w">
+						<value>0</value>
+					</parameter>
+				</parameters>
+			</vrayplugin>
+		</plugin>
+	</Asset>
+	<Asset renderer="vray" url="/old_metal/VRayBRDF/TexBitmap/BitmapBuffer" type="bitmap" layout="">
+		<plugin>
+			<vrayplugin version="7" type="bitmap" name="BitmapBuffer">
+				<parameters>
+					<parameter handler="default" listType="none" type="bool" name="allow_negative_colors" label="allow_negative_colors">
+						<value>0</value>
+					</parameter>
+					<parameter handler="ComboBoxHandler" listType="none" type="integer" name="color_space" label="color_space">
+						<value>1</value>
+					</parameter>
+					<parameter handler="FileBrowserHandler" listType="none" type="string" name="file" label="file">
+						<value>I:\Aljaz\3d_modeli\Materials\Metal\old_copper_bump.jpg</value>
+					</parameter>
+					<parameter handler="default" listType="none" type="float" name="filter_blur" label="filter_blur">
+						<value>0.15</value>
+					</parameter>
+					<parameter handler="ComboBoxHandler" listType="none" type="integer" name="filter_type" label="filter_type">
+						<value>1</value>
+					</parameter>
+					<parameter handler="default" listType="none" type="integer" name="frame_number" label="frame_number">
+						<value>0</value>
+					</parameter>
+					<parameter handler="default" listType="none" type="integer" name="frame_offset" label="frame_offset">
+						<value>0</value>
+					</parameter>
+					<parameter handler="default" listType="none" type="bool" name="frame_sequence" label="frame_sequence">
+						<value>0</value>
+					</parameter>
+					<parameter handler="default" listType="none" type="float" name="gamma" label="gamma">
+						<value>4</value>
+					</parameter>
+					<parameter handler="default" listType="none" type="integer" name="ifl_end_condition" label="ifl_end_condition">
+						<value>0</value>
+					</parameter>
+					<parameter handler="default" listType="none" type="float" name="ifl_playback_rate" label="ifl_playback_rate">
+						<value>1</value>
+					</parameter>
+					<parameter handler="default" listType="none" type="integer" name="ifl_start_frame" label="ifl_start_frame">
+						<value>0</value>
+					</parameter>
+					<parameter handler="default" listType="none" type="integer" name="interpolation" label="interpolation">
+						<value>0</value>
+					</parameter>
+					<parameter handler="default" listType="none" type="bool" name="load_file" label="load_file">
+						<value>1</value>
+					</parameter>
+					<parameter handler="default" listType="none" type="bool" name="maya_compatible" label="maya_compatible">
+						<value>0</value>
+					</parameter>
+					<parameter handler="default" listType="none" type="bool" name="use_data_window" label="use_data_window">
+						<value>1</value>
+					</parameter>
+				</parameters>
+			</vrayplugin>
+		</plugin>
+	</Asset>
+	<Asset renderer="vray" url="/old_metal/VRayBRDF/TexBitmap" type="texture" layout="">
+		<plugin>
+			<vrayplugin version="7" type="texture" name="TexBitmap">
+				<parameters>
+					<parameter handler="default" listType="none" type="integer" name="alpha_from_intensity" label="alpha_from_intensity">
+						<value>0</value>
+					</parameter>
+					<parameter handler="DoubleSpinBoxHandler" listType="none" type="float texture" name="alpha_mult" label="alpha_mult">
+						<value>1</value>
+					</parameter>
+					<parameter handler="DoubleSpinBoxHandler" listType="none" type="float texture" name="alpha_offset" label="alpha_offset">
+						<value>0</value>
+					</parameter>
+					<parameter handler="None" listType="none" type="plugin" name="bitmap" label="bitmap">
+						<value>/old_metal/VRayBRDF/TexBitmap/BitmapBuffer</value>
+					</parameter>
+					<parameter handler="default" listType="none" type="output acolor texture" name="color" label="color">
+						<value/>
+					</parameter>
+					<parameter handler="default" listType="none" type="texture" name="color_mult" label="color_mult">
+						<value/>
+					</parameter>
+					<parameter handler="default" listType="none" type="texture" name="color_offset" label="color_offset">
+						<value/>
+					</parameter>
+					<parameter handler="default" listType="none" type="integer" name="compatibility_with" label="compatibility_with">
+						<value>0</value>
+					</parameter>
+					<parameter handler="default" listType="none" type="float" name="h" label="h">
+						<value>1</value>
+					</parameter>
+					<parameter handler="default" listType="none" type="bool" name="invert" label="invert">
+						<value>0</value>
+					</parameter>
+					<parameter handler="default" listType="none" type="bool" name="invert_alpha" label="invert_alpha">
+						<value>0</value>
+					</parameter>
+					<parameter handler="default" listType="none" type="float" name="jitter" label="jitter">
+						<value>0</value>
+					</parameter>
+					<parameter handler="ColorTexFrameHandler" listType="none" type="texture" name="nouvw_color" label="nouvw_color">
+						<value>/old_metal/VRayBRDF/TexBitmap/nouvw_color</value>
+					</parameter>
+					<parameter handler="default" listType="none" type="output float texture" name="out_alpha" label="out_alpha">
+						<value/>
+					</parameter>
+					<parameter handler="default" listType="none" type="output float texture" name="out_intensity" label="out_intensity">
+						<value/>
+					</parameter>
+					<parameter handler="default" listType="none" type="output acolor texture" name="out_transparency" label="out_transparency">
+						<value/>
+					</parameter>
+					<parameter handler="ComboBoxHandler" listType="none" type="integer" name="placement_type" label="placement_type">
+						<value>0</value>
+					</parameter>
+					<parameter handler="default" listType="none" type="integer" name="tile" label="tile">
+						<value>1</value>
+					</parameter>
+					<parameter handler="default" listType="none" type="bool" name="tile_u" label="tile_u">
+						<value>0</value>
+					</parameter>
+					<parameter handler="default" listType="none" type="bool" name="tile_v" label="tile_v">
+						<value>0</value>
+					</parameter>
+					<parameter handler="default" listType="none" type="float" name="u" label="u">
+						<value>0</value>
+					</parameter>
+					<parameter handler="default" listType="none" type="float" name="un_noise_phase" label="un_noise_phase">
+						<value>0</value>
+					</parameter>
+					<parameter handler="default" listType="none" type="float" name="uv_noise_amount" label="uv_noise_amount">
+						<value>1</value>
+					</parameter>
+					<parameter handler="CheckBoxHandler" listType="none" type="bool" name="uv_noise_animate" label="uv_noise_animate">
+						<value>0</value>
+					</parameter>
+					<parameter handler="default" listType="none" type="float" name="uv_noise_levels" label="uv_noise_levels">
+						<value>1</value>
+					</parameter>
+					<parameter handler="CheckBoxHandler" listType="none" type="bool" name="uv_noise_on" label="uv_noise_on">
+						<value>0</value>
+					</parameter>
+					<parameter handler="default" listType="none" type="float" name="uv_noise_size" label="uv_noise_size">
+						<value>1</value>
+					</parameter>
+					<parameter handler="default" listType="none" type="plugin" name="uvwgen" label="uvwgen">
+						<value>/old_metal/VRayBRDF/TexBitmap/UVWGenChannel</value>
+					</parameter>
+					<parameter handler="default" listType="none" type="float" name="v" label="v">
+						<value>0</value>
+					</parameter>
+					<parameter handler="default" listType="none" type="float" name="w" label="w">
+						<value>1</value>
+					</parameter>
+					<parameter handler="default" listType="none" type="color" name="nouvw_color_color" label="nouvw_color_color" isUserData="1">
+						<value>
+							<r>0</r>
+							<g>0</g>
+							<b>0</b>
+						</value>
+					</parameter>
+					<parameter handler="TextureHandler" listType="none" type="acolor texture" name="nouvw_color_tex" label="nouvw_color_tex" isUserData="1">
+						<value/>
+					</parameter>
+					<parameter handler="default" listType="none" type="float" name="nouvw_color_tex_mult" label="nouvw_color_tex_mult" isUserData="1">
+						<value>1.0</value>
+					</parameter>
+					<parameter handler="default" listType="none" type="bool" name="nouvw_color_tex_on" label="nouvw_color_tex_on" isUserData="1">
+						<value>1</value>
+					</parameter>
+				</parameters>
+			</vrayplugin>
+		</plugin>
+	</Asset>
+	<Asset renderer="vray" url="/old_metal/VRayBRDF/reflect" type="texture" layout="">
+		<plugin>
+			<vrayplugin version="7" type="texture" name="TexAColorOp">
+				<parameters>
+					<parameter handler="default" listType="none" type="texture" name="color_a" label="color_a">
+						<value>/old_metal/VRayBRDF/TexBitmap</value>
+					</parameter>
+					<parameter handler="default" listType="none" type="float texture" name="mult_a" label="mult_a">
+						<value>1</value>
+					</parameter>
+				</parameters>
+			</vrayplugin>
+		</plugin>
+	</Asset>
+	<Asset renderer="vray" url="/old_metal/VRayBRDF/reflect_glossiness" type="texture" layout="">
+		<plugin>
+			<vrayplugin version="7" type="texture" name="TexAColorOp">
+				<parameters>
+					<parameter handler="default" listType="none" type="texture" name="color_a" label="color_a">
+						<value>
+							<r>0.75</r>
+							<g>0.75</g>
+							<b>0.75</b>
+						</value>
+					</parameter>
+					<parameter handler="default" listType="none" type="float texture" name="mult_a" label="mult_a">
+						<value>1.0</value>
+					</parameter>
+				</parameters>
+			</vrayplugin>
+		</plugin>
+	</Asset>
+	<Asset renderer="vray" url="/old_metal/VRayBRDF/refract" type="texture" layout="">
+		<plugin>
+			<vrayplugin version="7" type="texture" name="TexAColorOp">
+				<parameters>
+					<parameter handler="default" listType="none" type="texture" name="color_a" label="color_a">
+						<value>
+							<r>0</r>
+							<g>0</g>
+							<b>0</b>
+						</value>
+					</parameter>
+					<parameter handler="default" listType="none" type="float texture" name="mult_a" label="mult_a">
+						<value>1.0</value>
+					</parameter>
+				</parameters>
+			</vrayplugin>
+		</plugin>
+	</Asset>
+	<Asset renderer="vray" url="/old_metal/VRayBRDF/refract_glossiness" type="texture" layout="">
+		<plugin>
+			<vrayplugin version="7" type="texture" name="TexAColorOp">
+				<parameters>
+					<parameter handler="default" listType="none" type="texture" name="color_a" label="color_a">
+						<value>
+							<r>1</r>
+							<g>1</g>
+							<b>1</b>
+						</value>
+					</parameter>
+					<parameter handler="default" listType="none" type="float texture" name="mult_a" label="mult_a">
+						<value>1.0</value>
+					</parameter>
+				</parameters>
+			</vrayplugin>
+		</plugin>
+	</Asset>
+	<Asset renderer="vray" url="/old_metal/VRayBRDF/refract_ior" type="texture" layout="">
+		<plugin>
+			<vrayplugin version="7" type="texture" name="TexAColorOp">
+				<parameters>
+					<parameter handler="default" listType="none" type="texture" name="color_a" label="color_a">
+						<value>
+							<r>1.6</r>
+							<g>1.6</g>
+							<b>1.6</b>
+						</value>
+					</parameter>
+					<parameter handler="default" listType="none" type="float texture" name="mult_a" label="mult_a">
+						<value>1.0</value>
+					</parameter>
+				</parameters>
+			</vrayplugin>
+		</plugin>
+	</Asset>
+	<Asset renderer="vray" url="/old_metal/VRayBRDF/roughness" type="texture" layout="">
+		<plugin>
+			<vrayplugin version="7" type="texture" name="TexAColorOp">
+				<parameters>
+					<parameter handler="default" listType="none" type="texture" name="color_a" label="color_a">
+						<value>
+							<r>0</r>
+							<g>0</g>
+							<b>0</b>
+						</value>
+					</parameter>
+					<parameter handler="default" listType="none" type="float texture" name="mult_a" label="mult_a">
+						<value>1.0</value>
+					</parameter>
+				</parameters>
+			</vrayplugin>
+		</plugin>
+	</Asset>
+	<Asset renderer="vray" url="/old_metal/VRayBRDF/anisotropy_rotation" type="texture" layout="">
+		<plugin>
+			<vrayplugin version="7" type="texture" name="TexAColorOp">
+				<parameters>
+					<parameter handler="default" listType="none" type="texture" name="color_a" label="color_a">
+						<value>
+							<r>0</r>
+							<g>0</g>
+							<b>0</b>
+						</value>
+					</parameter>
+					<parameter handler="default" listType="none" type="float texture" name="mult_a" label="mult_a">
+						<value>1.0</value>
+					</parameter>
+				</parameters>
+			</vrayplugin>
+		</plugin>
+	</Asset>
+	<Asset renderer="vray" url="/old_metal/VRayBRDF/translucency_color" type="texture" layout="">
+		<plugin>
+			<vrayplugin version="7" type="texture" name="TexAColorOp">
+				<parameters>
+					<parameter handler="default" listType="none" type="texture" name="color_a" label="color_a">
+						<value>
+							<r>1</r>
+							<g>1</g>
+							<b>1</b>
+						</value>
+					</parameter>
+					<parameter handler="default" listType="none" type="float texture" name="mult_a" label="mult_a">
+						<value>1.0</value>
+					</parameter>
+				</parameters>
+			</vrayplugin>
+		</plugin>
+	</Asset>
+	<Asset renderer="vray" url="/old_metal/VRayBRDF" type="BRDF" layout="BRDFVRayMtlLayout">
+		<plugin>
+			<vrayplugin version="7" type="BRDF" name="BRDFVRayMtl">
+				<parameters>
+					<parameter handler="FloatTexFrameHandler" listType="none" type="float texture" name="anisotropy" label="anisotropy">
+						<value>/old_metal/VRayBRDF/anisotropy</value>
+					</parameter>
+					<parameter handler="ComboBoxHandler" listType="none" type="integer" name="anisotropy_axis" label="anisotropy_axis">
+						<value>2</value>
+					</parameter>
+					<parameter handler="ComboBoxHandler" listType="none" type="integer" name="anisotropy_derivation" label="anisotropy_derivation">
+						<value>1</value>
+					</parameter>
+					<parameter handler="FloatTexFrameHandler" listType="none" type="float texture" name="anisotropy_rotation" label="anisotropy_rotation">
+						<value>/old_metal/VRayBRDF/anisotropy_rotation</value>
+					</parameter>
+					<parameter handler="UVWHandler" listType="none" type="plugin" name="anisotropy_uvwgen" label="anisotropy_uvwgen">
+						<value/>
+					</parameter>
+					<parameter handler="ComboBoxHandler" listType="none" type="integer" name="brdf_type" label="brdf_type">
+						<value>1</value>
+					</parameter>
+					<parameter handler="ColorTexFrameHandler" listType="none" type="texture" name="diffuse" label="diffuse">
+						<value>/old_metal/VRayBRDF/diffuse</value>
+					</parameter>
+					<parameter handler="default" listType="none" type="float" name="dispersion" label="dispersion">
+						<value>50</value>
+					</parameter>
+					<parameter handler="default" listType="none" type="bool" name="dispersion_on" label="dispersion_on">
+						<value>0</value>
+					</parameter>
+					<parameter handler="ColorTexFrameHandler" listType="none" type="texture" name="environment_override" label="environment_override">
+						<value>/old_metal/VRayBRDF/environment_override</value>
+					</parameter>
+					<parameter handler="default" listType="none" type="integer" name="environment_priority" label="environment_priority">
+						<value>0</value>
+					</parameter>
+					<parameter handler="default" listType="none" type="float" name="fog_bias" label="fog_bias">
+						<value>0</value>
+					</parameter>
+					<parameter handler="default" listType="none" type="color" name="fog_color" label="fog_color">
+						<value>
+							<r>1</r>
+							<g>1</g>
+							<b>1</b>
+						</value>
+					</parameter>
+					<parameter handler="ColorTexFrameHandler" listType="none" type="texture" name="fog_color_tex" label="fog_color_tex">
+						<value>/old_metal/VRayBRDF/fog_color_tex</value>
+					</parameter>
+					<parameter handler="default" listType="none" type="float" name="fog_mult" label="fog_mult">
+						<value>1</value>
+					</parameter>
+					<parameter handler="default" listType="none" type="bool" name="fog_unit_scale_on" label="fog_unit_scale_on">
+						<value>1</value>
+					</parameter>
+					<parameter handler="default" listType="none" type="bool" name="fresnel" label="fresnel">
+						<value>1</value>
+					</parameter>
+					<parameter handler="FloatTexFrameHandler" listType="none" type="float texture" name="fresnel_ior" label="fresnel_ior">
+						<value>/old_metal/VRayBRDF/fresnel_ior</value>
+					</parameter>
+					<parameter handler="LockButtonHandler" listType="none" type="bool" name="fresnel_ior_lock" label="fresnel_ior_lock">
+						<value>0</value>
+					</parameter>
+					<parameter handler="DoubleSpinBoxHandler" listType="none" type="float" name="gtr_gamma" label="gtr_gamma">
+						<value>2</value>
+					</parameter>
+					<parameter handler="default" listType="none" type="bool" name="gtr_oldGamma" label="gtr_oldGamma">
+						<value>0</value>
+					</parameter>
+					<parameter handler="FloatTexFrameHandler" listType="none" type="float texture" name="hilight_glossiness" label="hilight_glossiness">
+						<value>/old_metal/VRayBRDF/hilight_glossiness</value>
+					</parameter>
+					<parameter handler="LockButtonHandler" listType="none" type="bool" name="hilight_glossiness_lock" label="hilight_glossiness_lock">
+						<value>1</value>
+					</parameter>
+					<parameter handler="default" listType="none" type="float" name="hilight_soften" label="hilight_soften">
+						<value>0</value>
+					</parameter>
+					<parameter handler="FloatTexFrameHandler" listType="none" type="float texture" name="opacity" label="opacity">
+						<value/>
+					</parameter>
+					<parameter handler="default" listType="none" type="float" name="option_cutoff" label="option_cutoff">
+						<value>0.001</value>
+					</parameter>
+					<parameter handler="default" listType="none" type="bool" name="option_double_sided" label="option_double_sided">
+						<value>1</value>
+					</parameter>
+					<parameter handler="ComboBoxHandler" listType="none" type="integer" name="option_energy_mode" label="option_energy_mode">
+						<value>0</value>
+					</parameter>
+					<parameter handler="CheckBoxHandler" listType="none" type="bool" name="option_fix_dark_edges" label="option_fix_dark_edges">
+						<value>1</value>
+					</parameter>
+					<parameter handler="ComboBoxHandler" listType="none" type="integer" name="option_glossy_rays_as_gi" label="option_glossy_rays_as_gi">
+						<value>1</value>
+					</parameter>
+					<parameter handler="default" listType="none" type="bool" name="option_reflect_on_back" label="option_reflect_on_back">
+						<value>0</value>
+					</parameter>
+					<parameter handler="default" listType="none" type="bool" name="option_use_irradiance_map" label="option_use_irradiance_map">
+						<value>1</value>
+					</parameter>
+					<parameter handler="default" listType="none" type="float" name="refl_imap_color_thresh" label="refl_imap_color_thresh">
+						<value>0.25</value>
+					</parameter>
+					<parameter handler="default" listType="none" type="integer" name="refl_imap_max_rate" label="refl_imap_max_rate">
+						<value>1</value>
+					</parameter>
+					<parameter handler="default" listType="none" type="integer" name="refl_imap_min_rate" label="refl_imap_min_rate">
+						<value>-1</value>
+					</parameter>
+					<parameter handler="default" listType="none" type="float" name="refl_imap_norm_thresh" label="refl_imap_norm_thresh">
+						<value>0.4</value>
+					</parameter>
+					<parameter handler="default" listType="none" type="integer" name="refl_imap_samples" label="refl_imap_samples">
+						<value>20</value>
+					</parameter>
+					<parameter handler="CheckBoxHandler" listType="none" type="bool" name="refl_interpolation_on" label="refl_interpolation_on">
+						<value>0</value>
+					</parameter>
+					<parameter handler="ColorTexFrameHandler" listType="none" type="texture" name="reflect" label="reflect">
+						<value>/old_metal/VRayBRDF/reflect</value>
+					</parameter>
+					<parameter handler="ComboBoxHandler" listType="none" type="integer" name="reflect_affect_alpha" label="reflect_affect_alpha">
+						<value>0</value>
+					</parameter>
+					<parameter handler="default" listType="none" type="integer" name="reflect_depth" label="reflect_depth">
+						<value>5</value>
+					</parameter>
+					<parameter handler="default" listType="none" type="float" name="reflect_dim_distance" label="reflect_dim_distance">
+						<value>1e+018</value>
+					</parameter>
+					<parameter handler="default" listType="none" type="float" name="reflect_dim_distance_falloff" label="reflect_dim_distance_falloff">
+						<value>0</value>
+					</parameter>
+					<parameter handler="default" listType="none" type="bool" name="reflect_dim_distance_on" label="reflect_dim_distance_on">
+						<value>0</value>
+					</parameter>
+					<parameter handler="default" listType="none" type="color" name="reflect_exit_color" label="reflect_exit_color">
+						<value>
+							<r>0</r>
+							<g>0</g>
+							<b>0</b>
+						</value>
+					</parameter>
+					<parameter handler="FloatTexFrameHandler" listType="none" type="float texture" name="reflect_glossiness" label="reflect_glossiness">
+						<value>/old_metal/VRayBRDF/reflect_glossiness</value>
+					</parameter>
+					<parameter handler="default" listType="none" type="integer" name="reflect_subdivs" label="reflect_subdivs">
+						<value>8</value>
+					</parameter>
+					<parameter handler="default" listType="none" type="bool" name="reflect_trace" label="reflect_trace">
+						<value>1</value>
+					</parameter>
+					<parameter handler="default" listType="none" type="float" name="refr_imap_color_thresh" label="refr_imap_color_thresh">
+						<value>0.25</value>
+					</parameter>
+					<parameter handler="default" listType="none" type="integer" name="refr_imap_max_rate" label="refr_imap_max_rate">
+						<value>1</value>
+					</parameter>
+					<parameter handler="default" listType="none" type="integer" name="refr_imap_min_rate" label="refr_imap_min_rate">
+						<value>-1</value>
+					</parameter>
+					<parameter handler="default" listType="none" type="float" name="refr_imap_norm_thresh" label="refr_imap_norm_thresh">
+						<value>0.4</value>
+					</parameter>
+					<parameter handler="default" listType="none" type="integer" name="refr_imap_samples" label="refr_imap_samples">
+						<value>20</value>
+					</parameter>
+					<parameter handler="CheckBoxHandler" listType="none" type="bool" name="refr_interpolation_on" label="refr_interpolation_on">
+						<value>0</value>
+					</parameter>
+					<parameter handler="ColorTexFrameHandler" listType="none" type="texture" name="refract" label="refract">
+						<value>/old_metal/VRayBRDF/refract</value>
+					</parameter>
+					<parameter handler="ComboBoxHandler" listType="none" type="integer" name="refract_affect_alpha" label="refract_affect_alpha">
+						<value>0</value>
+					</parameter>
+					<parameter handler="default" listType="none" type="bool" name="refract_affect_shadows" label="refract_affect_shadows">
+						<value>1</value>
+					</parameter>
+					<parameter handler="default" listType="none" type="integer" name="refract_depth" label="refract_depth">
+						<value>5</value>
+					</parameter>
+					<parameter handler="default" listType="none" type="color" name="refract_exit_color" label="refract_exit_color">
+						<value>
+							<r>0</r>
+							<g>0</g>
+							<b>0</b>
+						</value>
+					</parameter>
+					<parameter handler="default" listType="none" type="bool" name="refract_exit_color_on" label="refract_exit_color_on">
+						<value>0</value>
+					</parameter>
+					<parameter handler="FloatTexFrameHandler" listType="none" type="float texture" name="refract_glossiness" label="refract_glossiness">
+						<value>/old_metal/VRayBRDF/refract_glossiness</value>
+					</parameter>
+					<parameter handler="FloatTexFrameHandler" listType="none" type="float texture" name="refract_ior" label="refract_ior">
+						<value>/old_metal/VRayBRDF/refract_ior</value>
+					</parameter>
+					<parameter handler="default" listType="none" type="integer" name="refract_subdivs" label="refract_subdivs">
+						<value>8</value>
+					</parameter>
+					<parameter handler="default" listType="none" type="bool" name="refract_trace" label="refract_trace">
+						<value>1</value>
+					</parameter>
+					<parameter handler="FloatTexFrameHandler" listType="none" type="float texture" name="roughness" label="roughness">
+						<value>/old_metal/VRayBRDF/roughness</value>
+					</parameter>
+					<parameter handler="default" listType="none" type="texture" name="self_illumination" label="self_illumination">
+						<value/>
+					</parameter>
+					<parameter handler="default" listType="none" type="bool" name="self_illumination_gi" label="self_illumination_gi">
+						<value>1</value>
+					</parameter>
+					<parameter handler="ComboBoxHandler" listType="none" type="integer" name="translucency" label="translucency">
+						<value>0</value>
+					</parameter>
+					<parameter handler="ColorTexFrameHandler" listType="none" type="texture" name="translucency_color" label="translucency_color">
+						<value>/old_metal/VRayBRDF/translucency_color</value>
+					</parameter>
+					<parameter handler="default" listType="none" type="float" name="translucency_light_mult" label="translucency_light_mult">
+						<value>1</value>
+					</parameter>
+					<parameter handler="default" listType="none" type="float" name="translucency_scatter_coeff" label="translucency_scatter_coeff">
+						<value>0</value>
+					</parameter>
+					<parameter handler="default" listType="none" type="float" name="translucency_scatter_dir" label="translucency_scatter_dir">
+						<value>1</value>
+					</parameter>
+					<parameter handler="default" listType="none" type="float" name="translucency_thickness" label="translucency_thickness">
+						<value>1000</value>
+					</parameter>
+					<parameter handler="default" listType="none" type="bool" name="use_environment_override" label="use_environment_override">
+						<value>1</value>
+					</parameter>
+					<parameter handler="default" listType="none" type="float" name="anisotropy_float" label="anisotropy_float" isUserData="1">
+						<value>0</value>
+					</parameter>
+					<parameter handler="default" listType="none" type="float" name="anisotropy_rotation_float" label="anisotropy_rotation_float" isUserData="1">
+						<value>0</value>
+					</parameter>
+					<parameter handler="TextureHandler" listType="none" type="float texture" name="anisotropy_rotation_tex" label="anisotropy_rotation_tex" isUserData="1">
+						<value/>
+					</parameter>
+					<parameter handler="default" listType="none" type="float" name="anisotropy_rotation_tex_mult" label="anisotropy_rotation_tex_mult" isUserData="1">
+						<value>1</value>
+					</parameter>
+					<parameter handler="default" listType="none" type="bool" name="anisotropy_rotation_tex_on" label="anisotropy_rotation_tex_on" isUserData="1">
+						<value>1</value>
+					</parameter>
+					<parameter handler="TextureHandler" listType="none" type="float texture" name="anisotropy_tex" label="anisotropy_tex" isUserData="1">
+						<value/>
+					</parameter>
+					<parameter handler="default" listType="none" type="float" name="anisotropy_tex_mult" label="anisotropy_tex_mult" isUserData="1">
+						<value>1</value>
+					</parameter>
+					<parameter handler="default" listType="none" type="bool" name="anisotropy_tex_on" label="anisotropy_tex_on" isUserData="1">
+						<value>1</value>
+					</parameter>
+					<parameter handler="default" listType="none" type="color" name="diffuse_color" label="diffuse_color" isUserData="1">
+						<value>
+							<r>0.0431373</r>
+							<g>0.0431373</g>
+							<b>0.0431373</b>
+						</value>
+					</parameter>
+					<parameter handler="TextureHandler" listType="none" type="acolor texture" name="diffuse_tex" label="diffuse_tex" isUserData="1">
+						<value/>
+					</parameter>
+					<parameter handler="default" listType="none" type="float" name="diffuse_tex_mult" label="diffuse_tex_mult" isUserData="1">
+						<value>1</value>
+					</parameter>
+					<parameter handler="default" listType="none" type="bool" name="diffuse_tex_on" label="diffuse_tex_on" isUserData="1">
+						<value>1</value>
+					</parameter>
+					<parameter handler="default" listType="none" type="color" name="environment_override_color" label="environment_override_color" isUserData="1">
+						<value>
+							<r>0</r>
+							<g>0</g>
+							<b>0</b>
+						</value>
+					</parameter>
+					<parameter handler="default" listType="none" type="acolor texture" name="environment_override_tex" label="environment_override_tex" isUserData="1">
+						<value/>
+					</parameter>
+					<parameter handler="default" listType="none" type="float" name="environment_override_tex_mult" label="environment_override_tex_mult" isUserData="1">
+						<value>1.0</value>
+					</parameter>
+					<parameter handler="default" listType="none" type="bool" name="environment_override_tex_on" label="environment_override_tex_on" isUserData="1">
+						<value>1</value>
+					</parameter>
+					<parameter handler="default" listType="none" type="color" name="fog_color_tex_color" label="fog_color_tex_color" isUserData="1">
+						<value>
+							<r>1</r>
+							<g>1</g>
+							<b>1</b>
+						</value>
+					</parameter>
+					<parameter handler="TextureHandler" listType="none" type="texture" name="fog_color_tex_tex" label="fog_color_tex_tex" isUserData="1">
+						<value/>
+					</parameter>
+					<parameter handler="default" listType="none" type="float" name="fog_color_tex_tex_mult" label="fog_color_tex_tex_mult" isUserData="1">
+						<value>1</value>
+					</parameter>
+					<parameter handler="default" listType="none" type="bool" name="fog_color_tex_tex_on" label="fog_color_tex_tex_on" isUserData="1">
+						<value>1</value>
+					</parameter>
+					<parameter handler="default" listType="none" type="float" name="fresnel_ior_float" label="fresnel_ior_float" isUserData="1">
+						<value>10</value>
+					</parameter>
+					<parameter handler="TextureHandler" listType="none" type="float texture" name="fresnel_ior_tex" label="fresnel_ior_tex" isUserData="1">
+						<value/>
+					</parameter>
+					<parameter handler="default" listType="none" type="float" name="fresnel_ior_tex_mult" label="fresnel_ior_tex_mult" isUserData="1">
+						<value>1.0</value>
+					</parameter>
+					<parameter handler="default" listType="none" type="bool" name="fresnel_ior_tex_on" label="fresnel_ior_tex_on" isUserData="1">
+						<value>1</value>
+					</parameter>
+					<parameter handler="default" listType="none" type="float" name="hilight_glossiness_float" label="hilight_glossiness_float" isUserData="1">
+						<value>1</value>
+					</parameter>
+					<parameter handler="TextureHandler" listType="none" type="texture" name="hilight_glossiness_tex" label="hilight_glossiness_tex" isUserData="1">
+						<value/>
+					</parameter>
+					<parameter handler="default" listType="none" type="float" name="hilight_glossiness_tex_mult" label="hilight_glossiness_tex_mult" isUserData="1">
+						<value>1</value>
+					</parameter>
+					<parameter handler="default" listType="none" type="bool" name="hilight_glossiness_tex_on" label="hilight_glossiness_tex_on" isUserData="1">
+						<value>1</value>
+					</parameter>
+					<parameter handler="default" listType="none" type="float" name="opacity_float" label="opacity_float" isUserData="1">
+						<value>1</value>
+					</parameter>
+					<parameter handler="TextureHandler" listType="none" type="float texture" name="opacity_tex" label="opacity_tex" isUserData="1">
+						<value/>
+					</parameter>
+					<parameter handler="default" listType="none" type="float" name="opacity_tex_mult" label="opacity_tex_mult" isUserData="1">
+						<value>1</value>
+					</parameter>
+					<parameter handler="default" listType="none" type="bool" name="opacity_tex_on" label="opacity_tex_on" isUserData="1">
+						<value>1</value>
+					</parameter>
+					<parameter handler="default" listType="none" type="color" name="reflect_color" label="reflect_color" isUserData="1">
+						<value>
+							<r>0.941176</r>
+							<g>0.941176</g>
+							<b>0.941176</b>
+						</value>
+					</parameter>
+					<parameter handler="default" listType="none" type="float" name="reflect_glossiness_float" label="reflect_glossiness_float" isUserData="1">
+						<value>0.75</value>
+					</parameter>
+					<parameter handler="TextureHandler" listType="none" type="float texture" name="reflect_glossiness_tex" label="reflect_glossiness_tex" isUserData="1">
+						<value/>
+					</parameter>
+					<parameter handler="default" listType="none" type="float" name="reflect_glossiness_tex_mult" label="reflect_glossiness_tex_mult" isUserData="1">
+						<value>1</value>
+					</parameter>
+					<parameter handler="default" listType="none" type="bool" name="reflect_glossiness_tex_on" label="reflect_glossiness_tex_on" isUserData="1">
+						<value>1</value>
+					</parameter>
+					<parameter handler="TextureHandler" listType="none" type="acolor texture" name="reflect_tex" label="reflect_tex" isUserData="1">
+						<value>/old_metal/VRayBRDF/TexBitmap</value>
+					</parameter>
+					<parameter handler="default" listType="none" type="float" name="reflect_tex_mult" label="reflect_tex_mult" isUserData="1">
+						<value>1</value>
+					</parameter>
+					<parameter handler="default" listType="none" type="bool" name="reflect_tex_on" label="reflect_tex_on" isUserData="1">
+						<value>1</value>
+					</parameter>
+					<parameter handler="default" listType="none" type="color" name="refract_color" label="refract_color" isUserData="1">
+						<value>
+							<r>0</r>
+							<g>0</g>
+							<b>0</b>
+						</value>
+					</parameter>
+					<parameter handler="default" listType="none" type="float" name="refract_glossiness_float" label="refract_glossiness_float" isUserData="1">
+						<value>1</value>
+					</parameter>
+					<parameter handler="default" listType="none" type="float texture" name="refract_glossiness_tex" label="refract_glossiness_tex" isUserData="1">
+						<value/>
+					</parameter>
+					<parameter handler="default" listType="none" type="float" name="refract_glossiness_tex_mult" label="refract_glossiness_tex_mult" isUserData="1">
+						<value>1</value>
+					</parameter>
+					<parameter handler="default" listType="none" type="bool" name="refract_glossiness_tex_on" label="refract_glossiness_tex_on" isUserData="1">
+						<value>1</value>
+					</parameter>
+					<parameter handler="default" listType="none" type="float" name="refract_ior_float" label="refract_ior_float" isUserData="1">
+						<value>1.6</value>
+					</parameter>
+					<parameter handler="default" listType="none" type="float texture" name="refract_ior_tex" label="refract_ior_tex" isUserData="1">
+						<value/>
+					</parameter>
+					<parameter handler="default" listType="none" type="float" name="refract_ior_tex_mult" label="refract_ior_tex_mult" isUserData="1">
+						<value>1</value>
+					</parameter>
+					<parameter handler="default" listType="none" type="bool" name="refract_ior_tex_on" label="refract_ior_tex_on" isUserData="1">
+						<value>1</value>
+					</parameter>
+					<parameter handler="default" listType="none" type="acolor texture" name="refract_tex" label="refract_tex" isUserData="1">
+						<value/>
+					</parameter>
+					<parameter handler="default" listType="none" type="float" name="refract_tex_mult" label="refract_tex_mult" isUserData="1">
+						<value>1</value>
+					</parameter>
+					<parameter handler="default" listType="none" type="bool" name="refract_tex_on" label="refract_tex_on" isUserData="1">
+						<value>1</value>
+					</parameter>
+					<parameter handler="default" listType="none" type="float" name="roughness_float" label="roughness_float" isUserData="1">
+						<value>0</value>
+					</parameter>
+					<parameter handler="TextureHandler" listType="none" type="float texture" name="roughness_tex" label="roughness_tex" isUserData="1">
+						<value/>
+					</parameter>
+					<parameter handler="default" listType="none" type="float" name="roughness_tex_mult" label="roughness_tex_mult" isUserData="1">
+						<value>1</value>
+					</parameter>
+					<parameter handler="default" listType="none" type="bool" name="roughness_tex_on" label="roughness_tex_on" isUserData="1">
+						<value>1</value>
+					</parameter>
+					<parameter handler="ComboBoxHandler" listType="none" type="integer" name="texture_multiplier_mode" label="texture_multiplier_mode" isUserData="1">
+						<value>0</value>
+					</parameter>
+					<parameter handler="default" listType="none" type="color" name="translucency_color_color" label="translucency_color_color" isUserData="1">
+						<value>
+							<r>1</r>
+							<g>1</g>
+							<b>1</b>
+						</value>
+					</parameter>
+					<parameter handler="default" listType="none" type="acolor texture" name="translucency_color_tex" label="translucency_color_tex" isUserData="1">
+						<value/>
+					</parameter>
+					<parameter handler="default" listType="none" type="float" name="translucency_color_tex_mult" label="translucency_color_tex_mult" isUserData="1">
+						<value>1</value>
+					</parameter>
+					<parameter handler="default" listType="none" type="bool" name="translucency_color_tex_on" label="translucency_color_tex_on" isUserData="1">
+						<value>1</value>
+					</parameter>
+				</parameters>
+			</vrayplugin>
+		</plugin>
+	</Asset>
+	<Asset renderer="vray" url="/old_metal" type="material" layout="defvrmat">
+		<plugin>
+			<vrayplugin version="7" type="material" name="MtlASGVIS">
+				<parameters>
+					<parameter handler="default" listType="none" type="float" name="alpha" label="alpha">
+						<value>1</value>
+					</parameter>
+					<parameter handler="default" listType="none" type="texture" name="alpha_tex" label="alpha_tex">
+						<value/>
+					</parameter>
+					<parameter handler="default" listType="none" type="float" name="alpha_tex_mult" label="alpha_tex_mult">
+						<value>1</value>
+					</parameter>
+					<parameter handler="default" listType="none" type="color" name="bg_color" label="bg_color">
+						<value>
+							<r>1</r>
+							<g>1</g>
+							<b>1</b>
+						</value>
+					</parameter>
+					<parameter handler="TextureHandler" listType="none" type="plugin" name="bg_tex" label="bg_tex">
+						<value/>
+					</parameter>
+					<parameter handler="default" listType="none" type="float" name="bg_tex_mult" label="bg_tex_mult">
+						<value>1</value>
+					</parameter>
+					<parameter handler="default" listType="plugin" type="list" name="brdfs" label="brdfs">
+						<value>
+							<list>
+								<entry>/old_metal/VRayBRDF</entry>
+							</list>
+						</value>
+					</parameter>
+					<parameter handler="default" listType="none" type="float" name="bump_delta_scale" label="bump_delta_scale">
+						<value>1</value>
+					</parameter>
+					<parameter handler="default" listType="none" type="bool" name="bump_on" label="bump_on">
+						<value>0</value>
+					</parameter>
+					<parameter handler="default" listType="none" type="bool" name="bump_shadows" label="bump_shadows">
+						<value>0</value>
+					</parameter>
+					<parameter handler="TextureHandler" listType="none" type="plugin" name="bump_tex" label="bump_tex">
+						<value/>
+					</parameter>
+					<parameter handler="default" listType="none" type="float" name="bump_tex_mult" label="bump_tex_mult">
+						<value>1</value>
+					</parameter>
+					<parameter handler="default" listType="none" type="float texture" name="bump_tex_mult_tex" label="bump_tex_mult_tex">
+						<value/>
+					</parameter>
+					<parameter handler="default" listType="none" type="bool" name="cast_shadow" label="cast_shadow">
+						<value>1</value>
+					</parameter>
+					<parameter handler="PluginListPicker" listType="plugin" type="list" name="channels" label="channels">
+						<value>
+							<list/>
+						</value>
+					</parameter>
+					<parameter handler="default" listType="none" type="bool" name="compute_bump_for_shadows" label="compute_bump_for_shadows">
+						<value>1</value>
+					</parameter>
+					<parameter handler="default" listType="none" type="bool" name="disable_volume_fog" label="disable_volume_fog">
+						<value>0</value>
+					</parameter>
+					<parameter handler="default" listType="none" type="bool" name="displace_continuity" label="displace_continuity">
+						<value>1</value>
+					</parameter>
+					<parameter handler="default" listType="none" type="float" name="displace_edge_length" label="displace_edge_length">
+						<value>4</value>
+					</parameter>
+					<parameter handler="default" listType="none" type="integer" name="displace_max_subdivs" label="displace_max_subdivs">
+						<value>256</value>
+					</parameter>
+					<parameter handler="default" listType="none" type="bool" name="displace_on" label="displace_on">
+						<value>0</value>
+					</parameter>
+					<parameter handler="default" listType="none" type="float" name="displace_shift" label="displace_shift">
+						<value>0</value>
+					</parameter>
+					<parameter handler="TextureHandler" listType="none" type="plugin" name="displace_tex" label="displace_tex">
+						<value/>
+					</parameter>
+					<parameter handler="default" listType="none" type="float" name="displace_tex_mult" label="displace_tex_mult">
+						<value>1</value>
+					</parameter>
+					<parameter handler="default" listType="none" type="bool" name="displace_use_globals" label="displace_use_globals">
+						<value>1</value>
+					</parameter>
+					<parameter handler="default" listType="none" type="bool" name="displace_view_dependent" label="displace_view_dependent">
+						<value>1</value>
+					</parameter>
+					<parameter handler="default" listType="none" type="float" name="displace_water_level" label="displace_water_level">
+						<value>0</value>
+					</parameter>
+					<parameter handler="default" listType="none" type="bool" name="double_sided" label="double_sided">
+						<value>1</value>
+					</parameter>
+					<parameter handler="default" listType="none" type="color" name="gi_color" label="gi_color">
+						<value>
+							<r>0</r>
+							<g>0</g>
+							<b>0</b>
+						</value>
+					</parameter>
+					<parameter handler="TextureHandler" listType="none" type="plugin" name="gi_tex" label="gi_tex">
+						<value/>
+					</parameter>
+					<parameter handler="default" listType="none" type="float" name="gi_tex_mult" label="gi_tex_mult">
+						<value>1</value>
+					</parameter>
+					<parameter handler="default" listType="none" type="bool" name="ignore_objects" label="ignore_objects">
+						<value>0</value>
+					</parameter>
+					<parameter handler="ComboBoxHandler" listType="none" type="integer" name="map_type" label="map_type">
+						<value>0</value>
+					</parameter>
+					<parameter handler="default" listType="none" type="color" name="material_id_color" label="material_id_color">
+						<value>Color(0.6784313725490196, 0.8588235294117647, NaN)</value>
+					</parameter>
+					<parameter handler="default" listType="none" type="plugin" name="normal_uvwgen" label="normal_uvwgen">
+						<value/>
+					</parameter>
+					<parameter handler="default" listType="none" type="bool" name="only_visible_in_secondary" label="only_visible_in_secondary">
+						<value>0</value>
+					</parameter>
+					<parameter handler="default" listType="none" type="bool" name="override_bg" label="override_bg">
+						<value>0</value>
+					</parameter>
+					<parameter handler="default" listType="none" type="bool" name="override_gi" label="override_gi">
+						<value>0</value>
+					</parameter>
+					<parameter handler="default" listType="none" type="bool" name="override_reflect" label="override_reflect">
+						<value>0</value>
+					</parameter>
+					<parameter handler="default" listType="none" type="bool" name="override_refract" label="override_refract">
+						<value>0</value>
+					</parameter>
+					<parameter handler="default" listType="none" type="color" name="reflect_color" label="reflect_color">
+						<value>
+							<r>1</r>
+							<g>1</g>
+							<b>1</b>
+						</value>
+					</parameter>
+					<parameter handler="TextureHandler" listType="none" type="plugin" name="reflect_tex" label="reflect_tex">
+						<value/>
+					</parameter>
+					<parameter handler="default" listType="none" type="float" name="reflect_tex_mult" label="reflect_tex_mult">
+						<value>1</value>
+					</parameter>
+					<parameter handler="default" listType="none" type="color" name="refract_color" label="refract_color">
+						<value>
+							<r>1</r>
+							<g>1</g>
+							<b>1</b>
+						</value>
+					</parameter>
+					<parameter handler="TextureHandler" listType="none" type="plugin" name="refract_tex" label="refract_tex">
+						<value/>
+					</parameter>
+					<parameter handler="default" listType="none" type="float" name="refract_tex_mult" label="refract_tex_mult">
+						<value>1</value>
+					</parameter>
+					<parameter handler="default" listType="none" type="bool" name="short_circuit" label="short_circuit">
+						<value>0</value>
+					</parameter>
+					<parameter handler="default" listType="none" type="float" name="cutoff_dummy" label="cutoff_dummy" isUserData="1">
+						<value>0.01</value>
+					</parameter>
+					<parameter handler="default" listType="none" type="bool" name="effected_by_mtl_override" label="effected_by_mtl_override" isUserData="1">
+						<value>1</value>
+					</parameter>
+					<parameter handler="default" listType="none" type="string" name="material_type" label="material_type" isUserData="1">
+						<value>Generic</value>
+					</parameter>
+					<parameter handler="default" listType="none" type="bool" name="reflect_on_backside_dummy" label="reflect_on_backside_dummy" isUserData="1">
+						<value>0</value>
+					</parameter>
+					<parameter handler="default" listType="none" type="integer" name="trace_depth_dummy" label="trace_depth_dummy" isUserData="1">
+						<value>-1</value>
+					</parameter>
+					<parameter handler="default" listType="none" type="bool" name="trace_reflections_dummy" label="trace_reflections_dummy" isUserData="1">
+						<value>0</value>
+					</parameter>
+					<parameter handler="default" listType="none" type="bool" name="trace_refractions_dummy" label="trace_refractions_dummy" isUserData="1">
+						<value>0</value>
+					</parameter>
+				</parameters>
+			</vrayplugin>
+		</plugin>
+	</Asset>
+</vrmat>
+
