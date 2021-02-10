@@ -10,3 +10,8 @@ Contains instructional demo scenes for
 * Basic Fluid Dynamics
 
 Created to run on the Windows Mixed Reality headset, but runs on OpenVR.
+
+Created By
+===============
+* __[Jonathan Eichinger](https://github.com/AbrahamJhin)__
+* __[Pramit Mazumder](https://github.com/pmazumder3927)__
