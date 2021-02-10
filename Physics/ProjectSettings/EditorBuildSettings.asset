@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 1
+    path: Assets/DemoScenes/KinematicsDemo.unity
+    guid: 6f7a1de5703233f45ba77290f8eaf9c7
+  - enabled: 1
+    path: Assets/DemoScenes/MomentumDemo.unity
+    guid: 6785d20c187e6ae41b25eac201291760
+  - enabled: 1
+    path: Assets/DemoScenes/GravityDemo.unity
+    guid: b0c12fc7d4e6b7341a7321c256dc9ec7
+  - enabled: 1
+    path: Assets/DemoScenes/EnergyDemo.unity
+    guid: 3eaefedae1fa61d4c93afe7cbd016d56
+  - enabled: 1
+    path: Assets/DemoScenes/FluidDemo.unity
+    guid: 11d211c02e4054d4ebc4a5f32b1853a8
+  - enabled: 1
+    path: Assets/DemoScenes/EndScene.unity
+    guid: b433c36aee89083458c441ca7aa0b506
+  m_configObjects: {}

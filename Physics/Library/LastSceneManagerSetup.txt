@@ -1,0 +1,4 @@
+sceneSetups:
+- path: Assets/DemoScenes/VectorDemo.unity
+  isLoaded: 1
+  isActive: 1
